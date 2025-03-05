@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet"/>
+  <title>التواصل</title>
+</head>
+<body>
+  <style>
+      * {
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+            url('img/pexels-tom-piotrowski-754800-1608383.jpg') center/cover fixed;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .contact-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        
+        .description {
+            color: #2d3436;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .form-title {
+            color: #27ae60;
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 2px solid #eee;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #27ae60;
+            outline: none;
+        }
+        
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            color: #2d3436;
+            font-weight: 500;
+        }
+        
+        .submit-btn {
+            background: #27ae60;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: block;
+            margin: 20px auto 0;
+        }
+        
+        .submit-btn:hover {
+            background: #219a52;
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .contact-container {
+                padding: 25px;
+                margin: 20px auto;
+            }
+            
+            .form-title {
+                font-size: 24px;
+            }
+            
+            .description {
+                font-size: 16px;
+            }
+        }
+  </style>
+   <div class="contact-container">
+        <h1 class="form-title">تواصل معنا</h1>
+        
+        <p class="description">
+            نرحب بأسئلتكم واستفساراتكم في منتجع جولف هول إن ون<br>
+            فريقنا جاهز للرد عليكم خلال 24 ساعة. يرجى ملء النموذج التالي
+        </p>
+        
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    placeholder="example@tmail.com"
+                    required
+                >
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">الموضوع</label>
+                <input 
+                    type="text" 
+                    id="subject" 
+                    placeholder="أخبرنا كيف يمكننا مساعدتك؟"
+                    required
+                >
+            </div>
+            
+            <div class="form-group">
+                <label for="message">الرسالة</label>
+                <textarea 
+                    id="message" 
+                    rows="6"
+                    placeholder="اترك رسالتك هنا..."
+                    required
+                ></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">إرسال الرسالة</button>
+        </form>
+    </div>
+</body>
+</html>
